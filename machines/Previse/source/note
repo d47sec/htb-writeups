@@ -48,7 +48,13 @@ tim duoc password cua m4lwhere o trong database
 
 $1$🧂llol$DQpmdvnb7EeuO6UaqRItf.
 
-crack password cua m4lwhere sai hashcat -m 500 -a 0 -o cracked.txt hash /usr/share/wordlists/rockyou.txt
+crack password cua m4lwhere sai hashcat
+hashcat -m 500 -a 0 -o cracked.txt hash /usr/share/wordlists/rockyou.txt
+-m: loai hash dung de crack
+-a : loai attack 0, co nghia la su dung dictionary attack
+-o: output cua password da duoc crack
+
+
 
 password: ilovecody112235!
 
