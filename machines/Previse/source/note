@@ -40,7 +40,7 @@ tao mot reverse shell
 
 nhung ko co quyen de doc file user.txt, nen can phai dang nhap vao voi quyen m4lwhere 
 
-connect vs mysql 
+cho file config.php => co chua username vs password => connect vao mysql 
 
 mysql -u root -p (password trong file config)
 
