@@ -11,7 +11,7 @@ sai gobuter de brute thu muc
 
 gobuster dir -u http://10.10.11.104/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -x "php"
 
-
+`
 /index.php            (Status: 302) [Size: 2801] [--> login.php]
 /download.php         (Status: 302) [Size: 0] [--> login.php]   
 /login.php            (Status: 200) [Size: 2224]                
@@ -27,6 +27,7 @@ Progress: 2168 / 415288 (0.52%)
 /accounts.php         (Status: 302) [Size: 3994] [--> login.php]              
 /config.php           (Status: 200) [Size: 0]              
 
+`
 #####################################################################
 
 
