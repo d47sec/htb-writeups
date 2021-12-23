@@ -32,6 +32,12 @@ Progress: 2168 / 415288 (0.52%)
 
 ############################# EXPLOIT ###############################
 
+su dung curl de tao acc 
+
+curl -XPOST http://10.10.11.104/ -d "username=d47&password=d47&confirm=d47"
+
+login vao
+
 co file backup.zip => download => doc source => file logs.php co loi
 
 blind command injection 
