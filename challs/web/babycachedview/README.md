@@ -67,7 +67,5 @@ Tuỳ vào độ nhân phẩm của bạn sẽ cần số req khác nhau kk
 ![](images/2021-12-30-20-21-33.png)
 
 Và ta cũng sẽ có flag như SOLUTION1
-
 <br>
-
 ### Flag: HTB{reb1nd1ng_y0ur_dns_r3s0lv3r_0n3_qu3ry_4t_4_t1m3}
